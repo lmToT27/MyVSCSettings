@@ -54,4 +54,12 @@
     
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "window.zoomLevel": 3,
+    "window.newWindowDimensions": "maximized",
+    "editor.defaultColorDecorators": "always",
+
+    "vscode_custom_css.imports": [
+        "file:///D:/AllThings/Documents/custom_vscode.css"
+    ],
+    "vscode_custom_css.policy": true,
 }

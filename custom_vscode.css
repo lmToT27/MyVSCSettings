@@ -1,0 +1,15 @@
+.window-appicon {
+    display: none !important; 
+}
+
+.window-appicon {
+    background-image: url('https://raw.githubusercontent.com/tml27/MyVSCSettings/main/vscode_icon.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 16px !important; 
+    height: 16px !important;
+    padding-left: 20px !important;
+    display: block !important;
+    content: " " !important; 
+}
