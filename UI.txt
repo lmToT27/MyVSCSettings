@@ -8,23 +8,17 @@
     "editor.renderLineHighlight": "none",
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "editor.mouseWheelZoom": true,
-    
-    // --- MINIMAL UI (ZEN MODE) ---
-    "window.titleBarStyle": "custom",
     "workbench.startupEditor": "none",
     "workbench.editor.showTabs": "single",
     "workbench.sideBar.location": "right",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
-    "window.menuBarVisibility": "hidden",
-    "window.commandCenter": false,
+    // "window.menuBarVisibility": "hidden",
     "breadcrumbs.enabled": false,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.minimap.enabled": false,
-    "workbench.layoutControl.enabled": false,
     
     // --- SCROLLBARS ---
     "editor.scrollbar.horizontal": "hidden",
@@ -35,14 +29,20 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
-        "editorGroup.border": "#00000000",
-        "editor.lineHighlightBorder": "#00000000",
-        "panel.border": "#00000000",
+        "scrollbarSlider.background": "#00000000",
+        "scrollbarSlider.hoverBackground": "#00000000",
+        "scrollbarSlider.activeBackground": "#00000000",
+        "editorOverviewRuler.border": "#00000000",
+        "window.border": "#00000000",
+        "activityBar.border": "#00000000",
         "sideBar.border": "#00000000",
-        "tab.border": "#00000000",
+        "statusBar.border": "#00000000",
+        "editorGroup.border": "#00000022",
+        "contrastBorder": "#00000000",
+        "panel.border": "#00000000",
     },
 
-    // --- TERMINAL ---
+    // --- TERMINAL ---:
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 12,
@@ -55,11 +55,125 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "window.zoomLevel": 3,
-    "window.newWindowDimensions": "maximized",
     "editor.defaultColorDecorators": "always",
 
     "vscode_custom_css.imports": [
-        "file:///D:/AllThings/Documents/custom_vscode.css"
     ],
-    "vscode_custom_css.policy": true,
+
+    "vim.timeout": 200,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["k", "j"],
+        "after": ["<Esc>", "l"]
+        }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["`"],
+            "after": ["0"]
+        },
+        {
+            "before": ["0"],
+            "after": ["$"]
+        }
+    ],
+
+    "vim.operatorPendingModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["`"],
+            "after": ["0"]
+        },
+        {
+            "before": ["0"],
+            "after": ["$"]
+        }
+    ],
+    
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["`"],
+            "after": ["0"]
+        },
+        {
+            "before": ["0"],
+            "after": ["$"]
+        }
+    ],   
+
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-g>": false,
+        "<C-e>": false,
+        "<C-c>": false,
+        "<C-j>": false,
+        "<C-d>": false,
+        "<C-u>": false,
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-w>": false,
+        "<C-tab>": false,
+        "<C-p>": false,
+        "<C-n>": false,
+        "<C-y>": false,
+        "<C-r>": false,
+        "<C-S-r>": false,
+        "<C-z>": false,
+        "<C-S-z>": false,
+        "<C-x>": false,
+        "<C-[>": false,
+        "<C-]>": false,
+    },
+    
+    "vim.disableExtension": false,
+    "vim.enableNeovim": false,
+    "vim.visualstar": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "vim.easymotion": true,
+
+    "editor.lineNumbers": "relative",
+    "files.autoSaveDelay": 500,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "python.createEnvironment.trigger": "off",
+    "window.customTitleBarVisibility": "windowed",
+
+    "window.titleBarStyle": "native",
+
+    "custom-ui-style.electron": {
+        "titleBarStyle": "hidden",
+        "frame": false,
+    },
+
+    "window.menuBarVisibility": "hidden",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.border": "off",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "file:/**/*.csv": "jupyter-data-wrangler"
+    },
 }
